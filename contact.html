@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Firstprincilple Consultancy Services</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript">
+    function validateName() {
+                                var name = document.getElementById('name').value;
+                                 if(name.length == 0) {
+                                                        alert("Name can't be blank") ;
+                                                         return false;
+
+                                                       }
+                                if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                                                                                alert("Please enter your correct name") ;//Validation Message
+                                                                                return false;
+                                                                                        }
+                                return true;
+                                }
+
+
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+		  alert("Contact form submitted successfully ");
+            submitted=true;
+            return true;
+          }
+        }
+  </script>
+</head>
+
+<body>
+
+
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container d-flex">
+
+            <div class="logo mr-auto">
+                <!--<h1 class="text-light"><a href="index.html"><span>Firstprincilple</span></a></h1> -->
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            </div>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+
+                    <li class="drop-down">
+                        <a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="ITservices.html">Information Technology</a></li>
+                            <li><a href="MEservices.html">Mechanical</a></li>
+                            <li><a href="BCservices.html">Business Development</a></li>
+                            <li><a href="#">Electronics & Electric</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!--<li><a href="services.html">Services</a></li>
+                    <li><a href="">Product & Platforms</a></li>
+
+                    <li><a href="">Latest Thinking</a></li>  -->
+					<li><a href="Career">Career</a></li>  
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav><!-- .nav-menu -->
+
+        </div>
+    </header><!-- End Header -->
+
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Contact</li>
+                </ol>
+                <h2>Contact</h2>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= Contact Section ======= -->
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <center><h1><b>Contact Us</b></h1></center><br><br>
+                <div class="row">
+
+                    <div class="col-lg-6 ">
+                        <iframe class="mb-4 mb-lg-0" src="https://maps.google.com/maps?hl=en&amp;q=whitefield+(Banglore)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                    </div>
+                    <!--Update the URL for thank you page on form submit -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {window.location='https://www.firstprinciple.co.in';}"></iframe>
+                    <div class="col-lg-6">
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe8Vg3qxRbMJaJnASV7fXKXvEf9kfJ-4TwlWXuSNWs5tkM71g/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <input type="text" class="form-control" id="name" required name="entry.1651691656"/>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col form-group">
+                                    <input type="email" class="form-control" id="email" required name="entry.1239110015"/>
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="phone" required name="entry.995233189"/>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" id="message" required name="entry.94845276"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>  
+        <!-- End Contact Section -->
+        <!-- Start Contact Section -->
+    <!--
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>Contact Us</b></h4>
+
+                <script type="text/javascript">var submitted=false;</script>
+
+  
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {window.location='https://www.firstprinciple.co.in';}"></iframe>
+
+   
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe8Vg3qxRbMJaJnASV7fXKXvEf9kfJ-4TwlWXuSNWs5tkM71g/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1651691656">
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.1239110015">
+                    </div>
+                    <div class="w3-section">
+                        <label>Subject</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.995233189">
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" id="message" required name="entry.94845276">
+                    </div>
+                    <div class="w3-section">
+                        <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+            --> 
+        <!-- End Contact Section -->
+
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+
+    <footer id="footer">
+
+    
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Domains</a></li>  -->
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Career">Career</a></li>   
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="ITservices.html">IT Management Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="MEservices.html">Mechanical Operation Services </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="BCservices.html">Buisness Development Assistance</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Electronics Solutions</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>303 Kempanna Tower, <br>GAS Godown Road<br>Channasandra, Whitefield<br>Banglore-67 <br><br>
+            
+              <strong>Email:</strong> info@firstprinciple.co.in<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>CONNECT  WITH  FPCS</h3>
+            <p></p>
+            <div class="social-links mt-3">
+                <a href="https://www.facebook.com/First-Principle-Consultancy-Services-115380286999726" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/first_principle_cs/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/first-principle-consultancy-services/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Firstprinciple</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <strong><span>FPCS</span></strong>
+      </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

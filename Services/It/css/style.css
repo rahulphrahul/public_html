@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 4rem;
+}
+p {
+  background: rgba(112, 112, 112, 0.486);
+
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+
+  padding: 20px;
+}
+
+.s1 {
+  background: url(../../../assets/img/st.jpg);
+  background-size: cover;
+}
+
+.s2 {
+  background: url(../../../assets/img/about.jpg);
+  background-size: cover;
+}
+.s1 h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+.s3 {
+  background: url(../../../assets/img/cyber.jpg);
+  background-size: cover;
+}
+
+.s4 {
+  background: url(../../../assets/img/cloud.jpg);
+  background-size: cover;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fff;
+}
+
+.fp-slidesNav.fp-bottom {
+  margin-left: 2em !important;
+}
+/*# sourceMappingURL=style.css.map */
